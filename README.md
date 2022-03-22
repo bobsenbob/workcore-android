@@ -1,1 +1,0 @@
-# workcore-android
