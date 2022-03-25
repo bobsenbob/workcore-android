@@ -1,8 +1,13 @@
 import React, {useState} from 'react';
 import { View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 import Icon from 'react-native-vector-icons/Entypo';
-import { useNavigation } from '@react-navigation/native';
-
+import { useNavigation, DrawerActions } from '@react-navigation/native';
+import {
+    createDrawerNavigator,
+    DrawerContentScrollView,
+    DrawerItemList,
+    DrawerItem,
+  } from '@react-navigation/drawer';
 const Header = ((props) =>{
     const navigation=useNavigation();
     return (
@@ -13,7 +18,7 @@ const Header = ((props) =>{
                     name='menu'
                     size={40}
                     color='white'
-                    // onPress={()=>{navigation.toggleDrawer}}
+                    onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}
                 />
             </TouchableOpacity>
         </View>

@@ -48,6 +48,7 @@ const TodoList = (() =>{
 
 const styles = StyleSheet.create({
     container: {
+
       backgroundColor: '#fff',
       justifyContent: 'space-between',
       flex: 1,

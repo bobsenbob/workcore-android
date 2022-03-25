@@ -25,6 +25,7 @@ const AddItem = ((props) =>{
                 marginRight: 2.5,
                 flex: 5,
                 borderWidth: 1,
+                backgroundColor: 'white',
             }}
             onChangeText={changeText}
             value={text}
